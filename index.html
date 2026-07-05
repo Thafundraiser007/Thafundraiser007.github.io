@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamill Naipao — Aspiring Network & Infrastructure Engineer</title>
+<meta name="description" content="Portfolio of Jamill Naipao, an aspiring network and infrastructure engineer based in Port Moresby, PNG.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <span class="dot" aria-hidden="true"></span>
+      <span>jamill@portfolio</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="about.html">about</a>
+      <a href="skills.html">skills</a>
+      <a href="projects.html">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="certifications.html">certifications</a>
+      <a href="contact.html">contact</a>
+    </nav>
+    <a class="nav-cta" href="contact.html">get in touch →</a>
+  </div>
+</header>
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid">
+
+      <div class="terminal-panel" role="group" aria-label="Profile summary">
+        <div class="terminal-chrome">
+          <span class="chrome-dot red"></span>
+          <span class="chrome-dot amber"></span>
+          <span class="chrome-dot green"></span>
+          <span class="chrome-title">status.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p class="term-line"><span class="prompt">$</span> whoami</p>
+          <h1 class="term-name" id="typed-name">Jamill Naipao</h1>
+
+          <p class="term-line"><span class="prompt">$</span> cat role.txt</p>
+          <p class="term-output">Aspiring Network &amp; Infrastructure Engineer</p>
+
+          <p class="term-line"><span class="prompt">$</span> show interface status</p>
+          <ul class="status-list">
+            <li><span class="led up" aria-hidden="true"></span> routing/switching &amp; LAN/WAN — <b>up</b></li>
+            <li><span class="led up" aria-hidden="true"></span> structured cabling &amp; fibre optics — <b>up</b></li>
+            <li><span class="led up" aria-hidden="true"></span> windows server &amp; active directory — <b>up</b></li>
+            <li><span class="led learning" aria-hidden="true"></span> CCNA / Network+ — <b>learning</b></li>
+          </ul>
+
+          <div class="term-cta">
+            <a class="btn btn-primary" href="projects.html">view projects</a>
+            <a class="btn btn-ghost" href="resume.pdf">download résumé</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topology-wrap" aria-hidden="true">
+        <svg id="topology" viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+          <g class="links" stroke-width="1.5" fill="none">
+            <path id="link-1" d="M260,240 L120,110" />
+            <path id="link-2" d="M260,240 L400,110" />
+            <path id="link-3" d="M260,240 L120,370" />
+            <path id="link-4" d="M260,240 L400,370" />
+            <path id="link-5" d="M260,240 L260,50" />
+          </g>
+          <g class="packets" fill="#5EEAD4">
+            <circle r="4"><animateMotion dur="3.2s" repeatCount="indefinite" begin="0s"><mpath href="#link-1"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0.6s"><mpath href="#link-2"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3.6s" repeatCount="indefinite" begin="1.1s"><mpath href="#link-3"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="2.9s" repeatCount="indefinite" begin="0.3s"><mpath href="#link-4"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3.1s" repeatCount="indefinite" begin="0.9s"><mpath href="#link-5"/></animateMotion></circle>
+          </g>
+          <g class="nodes" font-family="JetBrains Mono, monospace" font-size="13">
+            <g class="node node-center">
+              <circle cx="260" cy="240" r="34"/>
+              <text x="260" y="245" text-anchor="middle">JN</text>
+            </g>
+            <g class="node">
+              <circle cx="120" cy="110" r="26"/>
+              <text x="120" y="115" text-anchor="middle">Route</text>
+            </g>
+            <g class="node">
+              <circle cx="400" cy="110" r="26"/>
+              <text x="400" y="115" text-anchor="middle">Switch</text>
+            </g>
+            <g class="node">
+              <circle cx="120" cy="370" r="26"/>
+              <text x="120" y="375" text-anchor="middle">Cabling</text>
+            </g>
+            <g class="node">
+              <circle cx="400" cy="370" r="26"/>
+              <text x="400" y="375" text-anchor="middle">Sec</text>
+            </g>
+            <g class="node">
+              <circle cx="260" cy="50" r="26"/>
+              <text x="260" y="55" text-anchor="middle">Auto</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ QUICK NAV ============ -->
+  <section class="section alt">
+    <div class="section-inner">
+      <p class="eyebrow">// ls ~/</p>
+      <h2 class="section-title">Find your way around</h2>
+      <div class="skill-grid">
+        <a class="skill-card" href="about.html" style="text-decoration:none;">
+          <h3>About</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem; margin:0;">Background, training, and what I'm looking for next.</p>
+        </a>
+        <a class="skill-card" href="skills.html" style="text-decoration:none;">
+          <h3>Skills</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem; margin:0;">Networking, infrastructure, systems, and tooling — by status.</p>
+        </a>
+        <a class="skill-card" href="projects.html" style="text-decoration:none;">
+          <h3>Projects</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem; margin:0;">Automation platforms and Packet Tracer / GNS3 labs.</p>
+        </a>
+        <a class="skill-card" href="experience.html" style="text-decoration:none;">
+          <h3>Experience</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem; margin:0;">Pacific International Hospital, freelance IT, and training.</p>
+        </a>
+        <a class="skill-card" href="certifications.html" style="text-decoration:none;">
+          <h3>Certifications</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem; margin:0;">Fortinet, Cisco Netcad, and CommsLearning / FOA credentials.</p>
+        </a>
+        <a class="skill-card" href="contact.html" style="text-decoration:none;">
+          <h3>Contact</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem; margin:0;">Email, phone, GitHub, and LinkedIn.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Jamill Naipao. Built with HTML, CSS &amp; a little SVG.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
